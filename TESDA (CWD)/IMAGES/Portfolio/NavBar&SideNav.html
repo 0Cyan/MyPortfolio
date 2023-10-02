@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/873df68ece.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png"
+        href="https://media.istockphoto.com/id/1304220514/vector/bicycle-icon-vector-illustration.jpg?s=612x612&w=0&k=20&c=ZQntvHdLetHwsKk6V1_PBaGydHj9tizQEr1tU1M2sx0=">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>NavBar & Sidebar</title>
+</head>
+
+<body>
+    <ul id="slide-out" class="sidenav">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                </div>
+                <a href="#user"><img class="circle" src="IMAGES/Sean.jpg"></a>
+                <a href="#name"><span class="black-text name">Sean Michael</span></a>
+                <a href="#email"><span class="black-text email">Seanpogi@gmail.com</span></a>
+            </div>
+        </li>
+        <li><a href="#!"></i>Help</a></li>
+        <li><a href="#!">Contacts</a></li>
+        <li><a href="#!">Support</a></li>
+        <li><a href="#!">Customer Service</a></li>
+
+    </ul>
+    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="fa-solid fa-bars black-text"></i></a>
+
+    <nav class="blue-grey">
+        <div class="conntainer">
+            <div class="nav-wrapper">
+                <a href="https://roadbikeaction.com" class="brand-logo" target="_blank"><i
+                        class="fa-solid fa-bicycle black-text"> ROAD BIKES</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li>
+                        <a href="https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-slr/domane-slr-9-axs-gen-4/p/37358/?colorCode=white"
+                            target="_blank">Colorways</a>
+                    </li>
+                    <li>
+                        <a href="https://www.evanscycles.com/help/bike-sizing-road" target="_blank">Frame Sizes</a>
+                    </li>
+                    <li>
+                        <a href="https://roadbikedatabase.com/bikes/l">Full Specifications</a>
+                    </li>
+                    <li>
+                        <a href="" class="dropdown-trigger" data-target="dropdown1">
+                            <i class="material-icons">arrow_drop_down</i>
+                            </i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <ul id="dropdown1" class="dropdown-content black">
+                <li><a href="#!">TREK</a></li>
+                <li><a href="#!">KEITH</a></li>
+                <li><a href="#!">ELVES</a></li>
+                <li><a href="#!">MOB</a></li>
+            </ul>
+    </nav>
+
+
+
+
+    <div class="slider">
+        <ul class="slides card-panel blue">
+            <li>
+                <img
+                    src="https://www.elmycycles.co.uk/smsimg/287/6683-0-full-madoneslr7etap_23_37418_b_primarywid2000-287.jpg">
+                <div class="caption center-align">
+                    <h1 class="black-text">TREK</h1>
+                </div>
+            </li>
+            <li>
+                <img src="https://i.pinimg.com/736x/99/16/b5/9916b581c03b3648a85b7485f9acccbd--rotary-the-national.jpg">
+                <div class="caption left-align">
+                    <h1 class="black-text center">KEITH</h1>
+                </div>
+            </li>
+            <li>
+                <img
+                    src="https://ueeshop.ly200-cdn.com/u_file/UPAX/UPAX049/2302/07/photo/7e79180316.png?x-oss-process=image/quality,q_80/resize,m_lfit,h_0,w_750">
+                <div class="caption right-align">
+                    <h1 class="white-text center">ELVES</h1>
+                </div>
+            </li>
+            <li>
+                <img
+                    src="https://static.wixstatic.com/media/06d794_d526a64bb9374150b08aff77c736863b~mv2.png/v1/fill/w_980,h_551,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/06d794_d526a64bb9374150b08aff77c736863b~mv2.png">
+                <div class="caption center-align">
+                    <h1 class="black-text">MOB</h1>
+                </div>
+            </li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="card-panel black">
+        <h4 class="white-text center">BRANDS</h4>
+    </div>
+
+    <table class="centered highlight responsive-table ">
+        <thread>
+            <tr>
+
+                <th class="card-panel red">TREK</th>
+                <th class="card-panel black white-text">KEITH</th>
+                <th class="card-panel white">ELVES</th>
+                <th class="card-panel yellow">MOB</th>
+            </tr>
+        </thread>
+    </table>
+
+
+
+    <div class="divider"></div>
+    <h3>TREK</h3>
+    <h3>KEITH</h3>
+    <h3>ELVES</h3>
+    <h3>MOB</h3>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>$(document).ready(function () {
+            $('.slider').slider();
+            $('.materialboxed').materialbox();
+        });</script>
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav({
+                edge: 'left'
+            });
+            $('.dropdown-trigger').dropdown();
+        });
+    </script>
+    <blockquote>
+        Support Philippine Cycling Community!
+    </blockquote>
+
+</body>
+
+</html>

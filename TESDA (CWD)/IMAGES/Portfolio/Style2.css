@@ -1,0 +1,36 @@
+body{
+    background-color:rgb(182, 231, 231) ;
+
+.logo{
+    font-weight: 300;
+    padding-left: 10px;
+}
+.parallax-container {
+    background-image: url('Keeb.jpg'); 
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.parallax-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.thin-text { 
+    font-weight: 300;
+    background: rgba(147, 215, 250, 0.4);
+    padding: 40px;
+    border-radius: 10px;
+}
+.icons {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+}
+}
