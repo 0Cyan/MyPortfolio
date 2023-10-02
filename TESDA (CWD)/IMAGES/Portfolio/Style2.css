@@ -1,6 +1,6 @@
 body{
     background-color:rgb(182, 231, 231) ;
-
+}
 .logo{
     font-weight: 300;
     padding-left: 10px;
@@ -33,4 +33,6 @@ body{
     margin-right: 100px;
     margin-top: 30px;
 }
+    .sidenav{
+    background-image: url(https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHdlYnNpdGUlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww&w=1000&q=80);
 }
