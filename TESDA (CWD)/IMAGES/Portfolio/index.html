@@ -20,8 +20,8 @@
         <nav>
             <div class="nav-wrapper cyan darken-4">
                 <div class="flex-container">
+                    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <a href="#!" class="brand-logo" style="font-family: Architects Daughter;">SeanPogi</a>
-                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul style="position: absolute; right: 3%;" class="hide-on-med-and-down">
                         <li><a href="#" style="font-family: Berkshire Swash;">Home</a></li>
                         <li><a href="#About" style="font-family: Berkshire Swash;">About</a></li>
@@ -48,10 +48,17 @@
             </div>
         </nav>
     </div>
-    <ul class="sidenav" id="mobile-demo">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Projects</a></li>
+    <ul id="slide-out" class="sidenav">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                </div>
+            </div>
+        </li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#Projects">Projects</a></li>
     </ul>
 
     <div class="parallax-container">
@@ -131,7 +138,8 @@
                         <img src="typo.png" alt="Project 1 Image">
                     </div>
                     <div class="card-action">
-                        <a class="blue-text text-darken-4" style="font-family: Alfa Slab One;" href="Colors&Typography.html">Colors and Typography</a>
+                        <a class="blue-text text-darken-4" style="font-family: Alfa Slab One;"
+                            href="Colors&Typography.html">Colors and Typography</a>
                     </div>
                 </div>
             </div>
@@ -142,7 +150,8 @@
                         <img src="media.png" alt="Project 2 Image">
                     </div>
                     <div class="card-action">
-                        <a class="blue-text text-darken-4" style="font-family: Alfa Slab One;" href="TablesAndMedia.html">Tables and Media</a>
+                        <a class="blue-text text-darken-4" style="font-family: Alfa Slab One;"
+                            href="TablesAndMedia.html">Tables and Media</a>
                     </div>
                 </div>
             </div>
@@ -155,7 +164,8 @@
                         <img src="nav.png" alt="Project 3 Image">
                     </div>
                     <div class="card-action">
-                        <a class="blue-text text-darken-4" style="font-family: Alfa Slab One;" href="NavBar&SideNav.html">NavBar and SideNav</a>
+                        <a class="blue-text text-darken-4" style="font-family: Alfa Slab One;"
+                            href="NavBar&SideNav.html">NavBar and SideNav</a>
                     </div>
                 </div>
             </div>
@@ -176,15 +186,17 @@
 
 
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
     <script src="https://kit.fontawesome.com/873df68ece.js" crossorigin="anonymous"></script>
 
     <script>
-        document.addEventListener('DOMContentLoaded'), function () {
-            var elems = document.querySelectorAll('.parallax');
-        }
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+            $('.parallax').parallax();
+        });
     </script>
 
 
